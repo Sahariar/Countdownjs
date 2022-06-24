@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'openSans': ['"Open Sans"', 'sans-serif'],
+                        'robotoSans': ['"Roboto Slab"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+   <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body class="bg-countdown">
+
+    <div class="container mx-auto px-4 min-h-screen">
+        <div class="title pt-48 pb-16">
+            <h1 class="text-5xl font-robotoSans text-center">Until new begining</h1>
+        </div>
+
+
+        <div class="counttimer my-16" id="countTimer">
+                <div class="grid grid-cols-5 gap-2">
+
+                    <div class="text-center">
+                        
+                        <div class="mnum font-robotoSans text-8xl" id="mnum" >
+                            
+                        </div>
+                        <div class="mtext font-openSans text-base">
+                            Months
+                        </div>
+
+                    </div>
+                        <!-- End colmun 1 -->
+                    <div class="text-center">
+                        <div class="dnum font-robotoSans text-8xl" id="dnum" >
+                            
+                        </div>
+                        <div class="dtext font-openSans text-base">
+                            Days
+                        </div>
+                    </div>
+                        <!-- End colmun 2 -->
+                    <div class="text-center">
+                        <div class="hnum font-robotoSans text-8xl" id="hnum">
+                        
+                    </div>
+                    <div class="htext font-openSans text-base">
+                        Hours
+                    </div>
+                </div>
+                    <!-- End colmun 3 -->
+                    <div class="text-center">
+                        <div class="minnum font-robotoSans text-8xl" id="minnum">
+                            
+                    </div>
+                    <div class="mitext font-openSans text-base">
+                        Minutes
+                    </div>
+                </div>
+                <!-- End colmun 4 -->
+                    <div class="text-center">
+                        <div class="snum font-robotoSans text-8xl" id="snum">
+                           
+                    </div>
+                    <div class="htext font-openSans text-base">
+                        Seconds
+                    </div>
+                </div>
+                <!-- End colmun 5 -->
+            </div>
+                <!-- End Grid -->
+
+        </div>
+        <!-- End Counttimer -->
+
+    <div id="showExpired" class="hidden">
+        <h1 class="text-5xl font-robotoSans text-center"> Time Expired</h1>
+    </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+
+
+</body>
+
+</html>

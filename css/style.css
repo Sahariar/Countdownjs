@@ -1,0 +1,7 @@
+.bg-countdown{
+    background-image: url(../img/Bitmap@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 51% -100%;
+    background-color: #f9fafc;
+}
