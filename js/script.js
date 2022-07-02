@@ -5,7 +5,7 @@ var countHours = document.getElementById("hnum");
 var countMinutes = document.getElementById("minnum");
 var countSeconds = document.getElementById("snum");
 
-const newYears = "5 Jun 2023";
+const newYears = "15 Feb 2023";
 
 // Update the count down every 1 second
 var x = setInterval(function () {
